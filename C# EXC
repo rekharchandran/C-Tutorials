@@ -1,0 +1,85 @@
+﻿using System;
+
+namespace excc
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*
+            int num1, num2;
+
+            Console.WriteLine(" Enter two numbers");
+
+             num1 = Convert.ToInt32(Console.ReadLine());
+             num2 = Convert.ToInt32(Console.ReadLine());
+
+            int sum = num1 + num2;
+
+            Console.WriteLine(num1 == 20 || num2 == 20 || (num1 + num2 == 20));
+
+
+*/
+
+            // Write a C# program to check if an given integer is within 20 of 100 or 200.
+            Console.WriteLine("\nInput an integer:");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(result(x));
+        }
+
+        public static bool result(int n)
+        {
+            if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
+                return true;
+            return false;
+
+            /*
+
+
+// Write a C# program to find the longest word in a string.
+
+            */
+
+            {
+                string line = "Write a C# Sharp Program to display the following pattern using the alphabet.";
+                string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
+                string word = "";
+                int ctr = 0;
+                foreach (String s in words)
+                {
+                    if (s.Length > ctr)
+                    {
+                        word = s;
+                        ctr = s.Length;
+                    }
+                }
+
+                Console.WriteLine(word);
+
+                /*
+
+                                // the odd numbers from 1 to 99. Prints one number per line.
+
+
+                                */
+
+                Console.WriteLine("Odd numbers from 1 to 99. Prints one number per line.");
+
+                for (int n = 1; n < (99 + 1); n++)
+                {
+                    if (n % 2 != 0)
+                    {
+                        Console.WriteLine(n.ToString());
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+    
